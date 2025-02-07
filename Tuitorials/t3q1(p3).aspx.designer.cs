@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AdRotatorDemo
+namespace Tuitorials
 {
 
 
-    public partial class Default
+    public partial class t3q1_p3_
     {
 
         /// <summary>
@@ -24,12 +24,21 @@ namespace AdRotatorDemo
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// AdRotator1 control.
+        /// lblSummary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.AdRotator AdRotator1;
+        protected global::System.Web.UI.WebControls.Label lblSummary;
+
+        /// <summary>
+        /// btnPrevious control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnPrevious;
     }
 }

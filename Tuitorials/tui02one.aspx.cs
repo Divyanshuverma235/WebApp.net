@@ -11,7 +11,7 @@ namespace Tuitorials
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // Any additional code to handle page load events can go here.
         }
     }
 }

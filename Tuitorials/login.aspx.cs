@@ -2,7 +2,6 @@
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Tuitorials
 {
@@ -20,7 +19,7 @@ namespace Tuitorials
             if (email == "dr@gmail.com" && password == "password")
             {
                 SaveUser(email, password);
-                Response.Write("Login successful... HA! HA!");
+                Response.Write("Login successful... HAHA!");
             }
             else
             {
@@ -34,10 +33,10 @@ namespace Tuitorials
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO Users (email, password) VALUES (@email, @password)";
+                string query = "INSERT INTO login (email, password) VALUES (@email, @password)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@email", email);
-                cmd.Parameters.AddWithValue("@assword", password);
+                cmd.Parameters.AddWithValue("@password", password); 
 
                 try
                 {
@@ -46,7 +45,7 @@ namespace Tuitorials
                 }
                 catch (Exception ex)
                 {
-                    // Handle the error
+                    
                     Response.Write("Error: " + ex.Message);
                 }
             }
